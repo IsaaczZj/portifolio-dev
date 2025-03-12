@@ -55,19 +55,24 @@ main{
 }
 .services{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   align-items: center;
+  
 }
 .service-bg{
   background-color: var(--gray-100);
   width: 100%;
+  padding-block: 56px;
 }
 .service{
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border: 2px solid rgba(75, 85, 99, 0.3);;
+  border-radius: 16px;
+  margin-top: 56px;
   img{
     width: 48px;
     height: 48px;
@@ -75,6 +80,11 @@ main{
   h2{
     font: var(--title-sm);
     color: var(--gray-600);
+    margin-block: 20px 8px;
+  }
+  span{
+    font: var(--text-sm);
+    color: var(--gray-500);
   }
   
 }
