@@ -7,7 +7,7 @@ main{
   margin: 0 auto; 
   width: 100%;
 }
-.title{
+.title {
   text-align: center;
   span{
     color: var(--red);
@@ -23,12 +23,15 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  max-width: 50rem;
+  justify-content: center;
 }
 .project{
   padding: 12px;
   background-color: var(--gray-300);
   border-radius: 12px;
   border: 2px solid transparent;
+  
   img{
     width: 305px;
     height: 150px;
@@ -49,4 +52,29 @@ main{
 .project:hover{
   border-color: var(--gray-400);
   cursor: pointer;
+}
+.services{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-bg{
+  background-color: var(--gray-100);
+  width: 100%;
+}
+.service{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  img{
+    width: 48px;
+    height: 48px;
+  };
+  h2{
+    font: var(--title-sm);
+    color: var(--gray-600);
+  }
+  
 }
